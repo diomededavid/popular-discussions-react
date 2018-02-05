@@ -1,0 +1,157 @@
+/******************************************************************
+Site Name: FSv5
+Stylesheet: Variables
+Description: Defines variables used by both the Bootstrap framework
+and theme specific styles.
+Original variables were loaded via bootstrap/_variables.scss and are redefined here
+
+If a section is commented out, that means the Bootstrap defaults for those sections are being used.
+******************************************************************/
+/** Base Elements color vars
+***************************************************/
+/** Single Post color vars
+***************************************************/
+/** Typography
+ Font, line-height, and color for body text, headings, and more.
+ **************************************************/
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Condensed Bold"), local("OpenSans-CondensedBold"), url(https://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xJhsE6jcpsD2oq89kgohWx0.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Oswald Light"), local("Oswald-Light"), url(https://fonts.gstatic.com/s/oswald/v10/HqHm7BVC_nzzTui2lzQTDaCWcynf_cDxXwCLxiixG1c.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Oswald Regular"), local("Oswald-Regular"), url(https://fonts.gstatic.com/s/oswald/v10/Y_TKV6o8WovbUd3m_X9aAA.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Oswald Bold"), local("Oswald-Bold"), url(https://fonts.gstatic.com/s/oswald/v10/bH7276GfdCjMjApa_dkG6aCWcynf_cDxXwCLxiixG1c.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Titillium WebLight"), local("TitilliumWeb-Light"), url(https://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format("woff"), url(https://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wpr93Z6MveExszb-iKWJY7ddA.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Titillium Web"), local("TitilliumWeb-Regular"), url(https://fonts.gstatic.com/s/titilliumweb/v4/7XUFZ5tgS-tD6QamInJTcdGU7DQ8I6RFMlK0vgclk7w.woff) format("woff"), url(https://fonts.gstatic.com/s/titilliumweb/v4/7XUFZ5tgS-tD6QamInJTcU3KvHLhcNjEHFQzwNtdMQY.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Titillium WebSemiBold"), local("TitilliumWeb-SemiBold"), url(https://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wprx7IBmrqA5IG9z8WNe77b9o.woff) format("woff"), url(https://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wpr4e2tK5W43RXgBRKkM4A5Qg.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Titillium WebBold"), local("TitilliumWeb-Bold"), url(https://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wpr0bathaSTBR2c4i13_wzlb0.woff) format("woff"), url(https://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wprzsSLeNQG2cy_mKit6iEdYs.ttf) format("truetype"); }
+
+/* FanSided specific var:
+screen width breakpoint used to remove margins/padding on full-width wrapper elements
+************************************************/
+h1 {
+  font-weight: 400;
+  font-size: 25.5px;
+  line-height: 34px;
+  color: #000000; }
+
+h2 {
+  font-weight: 400;
+  font-size: 25.5px;
+  line-height: 34px;
+  color: #000000; }
+
+h4 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20.8px;
+  color: #ffffff; }
+
+h5 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000; }
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000; }
+
+body {
+  font-family: Cinzel, serif; }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 1 0 100%; }
+  .cards .card {
+    flex: 0 1 calc(25% - 1em);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 0 0 10px 0;
+    margin: 0 0 20px 0;
+    background: url("https://placeimg.com/640/480/animals") no-repeat center top;
+    background-size: auto 215px; }
+    @media (max-width: 768px) {
+      .cards .card {
+        flex: 0 1 48%;
+        padding-bottom: 0;
+        background-size: cover; } }
+  .cards .card-header {
+    display: flex;
+    background: #4a4a4a;
+    flex: 0 1 7%;
+    padding: 0 12px; }
+    .cards .card-header h4 {
+      line-height: 0; }
+  .cards .card-content {
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 315px; }
+    @media (max-width: 768px) {
+      .cards .card-content {
+        flex: 1 1 100%;
+        height: 235px;
+        color: #ffffff; } }
+  .cards .card-description {
+    padding: 0 12px;
+    justify-content: flex-end; }
+    @media (max-width: 768px) {
+      .cards .card-description p {
+        color: white; } }
+  .cards .button-container {
+    display: flex;
+    width: 100%;
+    justify-content: center; }
+    .cards .button-container .btn {
+      font-family: Cinzel, serif;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      width: 90%;
+      color: #ffffff;
+      background-color: #1B1B1B;
+      border: 1px solid #1b1b1b; }
+      @media (max-width: 768px) {
+        .cards .button-container .btn {
+          width: 100%; } }

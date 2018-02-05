@@ -1,0 +1,10 @@
+{
+  "assets": {
+	"styles": [
+	  "./assets/styles/app.scss"
+	]
+  },
+  "config": {
+	"devUrl": "fansided.test"
+  }
+}
