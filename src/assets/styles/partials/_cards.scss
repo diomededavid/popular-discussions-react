@@ -2,11 +2,16 @@ body {
     font-family: Cinzel, serif;
 }
 
-.cards {
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
     display: flex;
-    flex-wrap: wrap;
+}
+
+.space-between {
     justify-content: space-between;
-    flex: 1 0 100%;
+}
 
     .card {
         flex: 0 1 calc(25% - 1em);
@@ -57,25 +62,3 @@ body {
             }
         }
     }
-
-    .button-container {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-
-        .btn {
-            font-family: Cinzel, serif;
-            padding: 0.5rem;
-            display: flex;
-            justify-content: center;
-            width: 90%;
-            color: #ffffff;
-            background-color: #1B1B1B;
-            border: 1px solid #1b1b1b;
-
-            @media (max-width: $screen-sm) {
-                width: 100%;
-            }
-        }
-    }
-}
