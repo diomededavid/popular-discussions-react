@@ -10,6 +10,7 @@ class App extends Component {
 			infinite: true,
 			slidesToShow: 4,
 			swipeToSlide: true,
+			lazyLoad: true,
 			responsive: [
 				{ breakpoint: 768, settings: { slidesToShow: 2 } },
 				{ breakpoint: 992, settings: { slidesToShow: 2 } },
@@ -18,7 +19,6 @@ class App extends Component {
 		};
 		return (
 			<div className='container'>
-				<nextArrow/>
 				<Slider {...settings}>
 
 					<div><CardContainer

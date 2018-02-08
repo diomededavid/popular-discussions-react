@@ -9,11 +9,6 @@ If a section is commented out, that means the Bootstrap defaults for those secti
 ******************************************************************/
 /** Base Elements color vars
 ***************************************************/
-/** Single Post color vars
-***************************************************/
-/* FanSided specific var:
-screen width breakpoint used to remove margins/padding on full-width wrapper elements
-************************************************/
 h1 {
   font-weight: 400;
   font-size: 25.5px;
@@ -46,19 +41,20 @@ p {
 
 body {
   font-family: Cinzel, serif;
-  background: #f3f3f3; }
+  background: #f3f3f3;
+  text-rendering: optimizeLegibility; }
 
 .container {
   margin: 20px;
-  padding: 20px; }
+  padding: 20px;
+  width: calc(100% - 85px); }
 
 .card {
-  flex: 0 1 calc(25% - 2em);
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 0 0 10px 0;
-  margin: 0 10px 0 10px;
-  background: #fff url("http://via.placeholder.com/350x150") no-repeat center 35px;
-  background-size: auto 210px; }
+  flex: 0 1 calc(25%);
+  padding: 0 0 12px 0;
+  margin: 0 6px;
+  background: #fff url("http://via.placeholder.com/280x200") no-repeat center 35px;
+  background-size: auto 235px; }
   @media (max-width: 768px) {
     .card {
       flex: 0 1 48%;
@@ -78,7 +74,7 @@ body {
   align-self: center;
   justify-content: flex-end;
   flex-direction: column;
-  height: 315px; }
+  height: 395px; }
   @media (max-width: 768px) {
     .content {
       flex: 1 1 100%;
@@ -92,14 +88,57 @@ body {
     .card-description p {
       color: white; } }
 
+.slick-prev {
+  left: -55px; }
+
+.slick-next {
+  right: -50px; }
+
+.slick-next, .slick-prev {
+  font-size: 0;
+  line-height: 0;
+  top: 50%;
+  width: 50px;
+  height: 105px;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: black;
+  border: none;
+  outline: 0;
+  background: #d8d8d8; }
+
+.slick-prev:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f104";
+  font-size: 48px;
+  color: #818181; }
+
+.slick-slider .slick-prev:hover {
+  transition: background .2s ease-in-out;
+  background: rgba(0, 0, 0, 0.3); }
+
+.slick-slider .slick-next:hover {
+  transition: background .2s ease-in-out;
+  background: rgba(0, 0, 0, 0.3); }
+
+.slick-next:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f105";
+  font-size: 48px;
+  color: #818181; }
+
 .button-container {
   display: flex;
   width: 100%;
   justify-content: center;
-  padding: 5px 0 0 0; }
+  padding: 5px 0 0 0;
+  margin: 0; }
   .button-container .btn {
     font-family: Cinzel, serif;
     padding: 0.5rem;
+    margin: 0;
     display: flex;
     justify-content: center;
     width: 90%;
