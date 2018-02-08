@@ -6,10 +6,10 @@ class CardContainer extends React.Component {
     return(
 
         <div class="card">
-              <div class="card-header">
+              <div class="header">
                 <h4>{this.props.title}</h4>
               </div>
-              <div class="card-content">
+              <div class="content">
                 <div class="card-description">{this.props.description}
                 </div>
                   <div class="button-container">

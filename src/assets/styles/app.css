@@ -11,57 +11,6 @@ If a section is commented out, that means the Bootstrap defaults for those secti
 ***************************************************/
 /** Single Post color vars
 ***************************************************/
-/** Typography
- Font, line-height, and color for body text, headings, and more.
- **************************************************/
-@font-face {
-  font-family: 'Open Sans Condensed';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Open Sans Condensed Bold"), local("OpenSans-CondensedBold"), url(https://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xJhsE6jcpsD2oq89kgohWx0.ttf) format("truetype"); }
-
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 300;
-  src: local("Oswald Light"), local("Oswald-Light"), url(https://fonts.gstatic.com/s/oswald/v10/HqHm7BVC_nzzTui2lzQTDaCWcynf_cDxXwCLxiixG1c.ttf) format("truetype"); }
-
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Oswald Regular"), local("Oswald-Regular"), url(https://fonts.gstatic.com/s/oswald/v10/Y_TKV6o8WovbUd3m_X9aAA.ttf) format("truetype"); }
-
-@font-face {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Oswald Bold"), local("Oswald-Bold"), url(https://fonts.gstatic.com/s/oswald/v10/bH7276GfdCjMjApa_dkG6aCWcynf_cDxXwCLxiixG1c.ttf) format("truetype"); }
-
-@font-face {
-  font-family: 'Titillium Web';
-  font-style: normal;
-  font-weight: 300;
-  src: local("Titillium WebLight"), local("TitilliumWeb-Light"), url(https://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format("woff"), url(https://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wpr93Z6MveExszb-iKWJY7ddA.ttf) format("truetype"); }
-
-@font-face {
-  font-family: 'Titillium Web';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Titillium Web"), local("TitilliumWeb-Regular"), url(https://fonts.gstatic.com/s/titilliumweb/v4/7XUFZ5tgS-tD6QamInJTcdGU7DQ8I6RFMlK0vgclk7w.woff) format("woff"), url(https://fonts.gstatic.com/s/titilliumweb/v4/7XUFZ5tgS-tD6QamInJTcU3KvHLhcNjEHFQzwNtdMQY.ttf) format("truetype"); }
-
-@font-face {
-  font-family: 'Titillium Web';
-  font-style: normal;
-  font-weight: 600;
-  src: local("Titillium WebSemiBold"), local("TitilliumWeb-SemiBold"), url(https://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wprx7IBmrqA5IG9z8WNe77b9o.woff) format("woff"), url(https://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wpr4e2tK5W43RXgBRKkM4A5Qg.ttf) format("truetype"); }
-
-@font-face {
-  font-family: 'Titillium Web';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Titillium WebBold"), local("TitilliumWeb-Bold"), url(https://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wpr0bathaSTBR2c4i13_wzlb0.woff) format("woff"), url(https://fonts.gstatic.com/s/titilliumweb/v4/anMUvcNT0H1YN4FII8wprzsSLeNQG2cy_mKit6iEdYs.ttf) format("truetype"); }
-
 /* FanSided specific var:
 screen width breakpoint used to remove margins/padding on full-width wrapper elements
 ************************************************/
@@ -96,46 +45,42 @@ p {
   color: #000000; }
 
 body {
-  font-family: Cinzel, serif; }
+  font-family: Cinzel, serif;
+  background: #f3f3f3; }
 
-.flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex; }
-
-.space-between {
-  justify-content: space-between; }
+.container {
+  margin: 20px;
+  padding: 20px; }
 
 .card {
-  flex: 0 1 calc(25% - 1em);
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  flex: 0 1 calc(25% - 2em);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 0 0 10px 0;
-  margin: 0 0 20px 0;
-  background: url("https://placeimg.com/640/480/animals") no-repeat center top;
-  background-size: auto 215px; }
+  margin: 0 10px 0 10px;
+  background: #fff url("http://via.placeholder.com/350x150") no-repeat center 35px;
+  background-size: auto 210px; }
   @media (max-width: 768px) {
     .card {
       flex: 0 1 48%;
       padding-bottom: 0;
       background-size: cover; } }
 
-.card-header {
+.header {
   display: flex;
   background: #4a4a4a;
   flex: 0 1 7%;
   padding: 0 12px; }
-  .card-header h4 {
+  .header h4 {
     line-height: 0; }
 
-.card-content {
+.content {
   display: flex;
   align-self: center;
   justify-content: flex-end;
   flex-direction: column;
   height: 315px; }
   @media (max-width: 768px) {
-    .card-content {
+    .content {
       flex: 1 1 100%;
       height: 235px;
       color: #ffffff; } }
@@ -150,7 +95,8 @@ body {
 .button-container {
   display: flex;
   width: 100%;
-  justify-content: center; }
+  justify-content: center;
+  padding: 5px 0 0 0; }
   .button-container .btn {
     font-family: Cinzel, serif;
     padding: 0.5rem;

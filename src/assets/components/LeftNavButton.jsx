@@ -7,4 +7,6 @@ class LeftNavButton extends React.Component {
 	}
 }
 
+
+
 export default LeftNavButton;
